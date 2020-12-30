@@ -1,6 +1,6 @@
 # jitcalc
 
-Trying out lemon parser and asmjit with a jit calucalator. Sample output:
+Trying out lemon parser and asmjit with a jit calculator. Sample output:
 
      ---- Enter a calculation ---- 
     1+2*3
