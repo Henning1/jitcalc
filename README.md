@@ -1,6 +1,31 @@
 # jitcalc
 
-Trying out lemon parser and asmjit with an jit calucalator.
+Trying out lemon parser and asmjit with a jit calucalator. Sample output:
+
+     ---- Enter a calculation ---- 
+    1+2*3
+    
+     ---- Abstract Syntax Tree ---- 
+    └── +
+        ├──1
+        └── *
+            ├──2
+            └──3
+    
+     ---- x86 Machine Assembly ---- 
+    .section .text {#0}
+    L1:
+    mov eax, 1
+    mov edx, 2
+    mov ecx, 3
+    imul edx, ecx
+    add eax, edx
+    L0:
+    ret
+    
+     ---- Result ---- 
+     = 7
+
 
 ## Instructions
 
